@@ -353,3 +353,50 @@ export const yellowThemeDark = {
     contactsimg: contactsYellow
 }
 
+
+
+//new themes
+
+export const minimalistThemeLight = {
+    type: 'light',
+    primary: '#2E2E2E', // Dark Gray
+    primary400: '#4A4A4A',
+    primary600: '#1F1F1F',
+    primary80: '#2E2E2ECC',
+    primary50: '#2E2E2E80',
+    primary30: '#2E2E2E4D',
+    secondary: '#F5F5F5', // Light Gray
+    secondary70: '#F5F5F5B3',
+    secondary50: '#F5F5F580',
+    tertiary: '#FFFFFF', // White for clean contrast
+    tertiary80: '#FFFFFFCC',
+    tertiary70: '#FFFFFFB3',
+    tertiary50: '#FFFFFF80',
+    aboutimg1: bwThemeboy,  // Monochrome images for a sleek look
+    aboutimg2: bwThemegirl,
+    eduimg: eduBlack,
+    expimg: expBlack,
+    contactsimg: contactsBlack
+}
+
+export const minimalistThemeDark = {
+    type: 'dark',
+    primary: '#F5F5F5', // Light Gray for dark mode
+    primary400: '#D4D4D4',
+    primary600: '#BEBEBE',
+    primary80: '#F5F5F5CC',
+    primary50: '#F5F5F580',
+    primary30: '#F5F5F54D',
+    secondary: '#1E1E1E', // Almost black for depth
+    secondary70: '#1E1E1EB3',
+    secondary50: '#1E1E1E80',
+    tertiary: '#292929', // Dark Gray for contrast
+    tertiary80: '#292929CC',
+    tertiary70: '#292929B3',
+    tertiary50: '#29292980',
+    aboutimg1: bwThemeboy, 
+    aboutimg2: bwThemegirl,
+    eduimg: eduBlack,
+    expimg: expBlack,
+    contactsimg: contactsBlack
+}
