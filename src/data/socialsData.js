@@ -1,8 +1,8 @@
 export const socialsData = {
-    github: 'https://github.com/',
+    github: 'https://github.com/RohnRoy',
     facebook: 'https://www.facebook.com/',
-    linkedIn: 'https://www.linkedin.com/in',
-    instagram: 'https://www.instagram.com/',
+    linkedIn: 'https://www.linkedin.com/in/rohn-roy/',
+    instagram: 'https://www.instagram.com/_ron_roy_?igsh=ZmExb3dwcTE2end0',
     codepen: 'https://codepen.io/',
     twitter: 'https://twitter.com/',
     reddit: 'https://www.reddit.com/user/',

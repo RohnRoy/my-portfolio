@@ -1,6 +1,7 @@
 import five from "../assets/svg/projects/five.svg";
 import six from "../assets/svg/projects/six.svg";
 import seven from "../assets/svg/projects/seven.svg";
+import sample from "../assets/svg/projects/sample.svg";
 
 export const projectsData = [
   {
@@ -31,15 +32,15 @@ export const projectsData = [
     demo: "www.naturesanctuary.in",
     image: seven,
   },
-  // {
-  //     id: 4,
-  //     projectName: 'Android Patient Tracker',
-  //     projectDesc: 'This project involves the development of an Android application for viewing and managing patient data.',
-  //     tags: ['Flutter', 'Firebase'],
-  //     code: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-  //     demo: 'https://github.com/hhhrrrttt222111/developer-portfolio',
-  //     image: four
-  // },
+  {
+      id: 4,
+      projectName: 'Global International',
+      projectDesc: 'Website for education and job consultancy.',
+      tags: ['Python', 'Django', 'HTML', 'CSS','JavaScript'],
+      code: '',
+      demo: '',
+      image: sample
+  },
   // {
   //     id: 5,
   //     projectName: 'E-Commerce App',

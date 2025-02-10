@@ -1,5 +1,5 @@
 import resume from "../assets/pdf/Rohn_Roy_Resume.pdf";
-import profileImage from "../assets/png/DSC01281.webp";
+import profileImage from "../assets/png/Profile.png";
 
 export const headerData = {
   name: "Rohn Roy",

@@ -11,45 +11,45 @@ import boy3 from '../assets/svg/testimonials/boy3.svg'
 export const testimonialsData = [
     {
         id: 1,
-        name: 'Chandler Bing',
-        title: 'Transponster',
-        text: "Building my own portfolio could've never been easier than this. The only areas I'm good at are Math, Jokes and Dance.",
+        name: 'Sunil Jacob',
+        title: 'CEO - Nature Sanctuary',
+        text: "Rohn helped us create a website that perfectly showcases our unique blend of nature, relaxation, and adventure.",
         image: boy2
     },
     {
         id: 2,
-        name: 'Monica Geller',
-        title: 'Head Chef',
-        text: "This is the only thing that I didn't have to spend time to sort out. It's tidy all by itself.",
-        image: girl2
-    },
-    {
-        id: 3,
-        name: 'Phoebe Buffay',
-        title: 'Massuese',
-        text: "Heard of the song 'Smelly Cat!!' ? This website made it viral. Plus portfolio is the only thing that Ursula doesn't have :)",
-        image: girl1
-    },
-    {
-        id: 4,
-        name: 'Joey Tribbiani',
-        title: 'Actor',
-        text: "Making my portfolio with this helped me get my role as 'Dr. Drake Ramoray' in 'Days Of Our Lives'. You guys are the best !",
+        name: 'Vinod Joseph',
+        title: 'CEO - Nature Spicy',
+        text: "Rohn perfectly captured the vibrant colors, rich aromas, and unique flavors of our organic spices in a visually stunning and user-friendly website.",
         image: boy1
     },
     {
-        id: 5,
-        name: 'Rachel Green',
-        title: 'Sales Executive',
-        text: 'Ralph Lauren was one of the best things that ever happened to me. My portfolio made that dream happen. I owe you guys.',
-        image: girl3
-    },
-    {
-        id: 6,
-        name: 'Ross Geller',
-        title: 'Paleontologist',
-        text: "Be it 'Rocks' or 'Bones', you need a website to display it. This is it. Great work guys !",
+        id: 3,
+        name: 'Eby Emmanuel',
+        title: 'CEO - Global International',
+        text: "Rohn perfectly captured Global International's commitment to global education and career development in our new website.",
         image: boy3
-    }
+    },
+    // {
+    //     id: 4,
+    //     name: 'Joey Tribbiani',
+    //     title: 'Actor',
+    //     text: "Making my portfolio with this helped me get my role as 'Dr. Drake Ramoray' in 'Days Of Our Lives'. You guys are the best !",
+    //     image: boy1
+    // },
+    // {
+    //     id: 5,
+    //     name: 'Rachel Green',
+    //     title: 'Sales Executive',
+    //     text: 'Ralph Lauren was one of the best things that ever happened to me. My portfolio made that dream happen. I owe you guys.',
+    //     image: girl3
+    // },
+    // {
+    //     id: 6,
+    //     name: 'Ross Geller',
+    //     title: 'Paleontologist',
+    //     text: "Be it 'Rocks' or 'Bones', you need a website to display it. This is it. Great work guys !",
+    //     image: boy3
+    // }
 ]
 

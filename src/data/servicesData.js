@@ -1,8 +1,7 @@
 /* eslint-disable */
-import { BiShoppingBag, BiPencil } from "react-icons/bi";
-import { BsCodeSlash, BsClipboardData } from "react-icons/bs";
-import { AiOutlineMail, AiFillAudio } from "react-icons/ai";
-import { FaInternetExplorer,  FaChalkboardTeacher, FaCameraRetro, FaPinterest, FaVideo, FaTabletAlt, FaRegNewspaper } from "react-icons/fa";
+import { BiPencil } from "react-icons/bi";
+import { BsCodeSlash } from "react-icons/bs";
+import { FaCameraRetro, FaPhotoVideo, FaCloud } from "react-icons/fa";
 
  
 
@@ -14,13 +13,13 @@ export const servicesData = [
     // },
     {
         id: 2,
-        title: 'Content Writing',
-        icon: <BiPencil /> 
+        title: 'Software Development',
+        icon: <BsCodeSlash /> 
     },
     {
         id: 3,
-        title: 'Email Marketing',
-        icon: <AiOutlineMail />
+        title: 'Web Development',
+        icon: <BsCodeSlash />
     },
     // {
     //     id: 4,
@@ -36,7 +35,7 @@ export const servicesData = [
     {
         id: 6,
         title: 'Web Design',
-        icon: <BsCodeSlash />
+        icon: <BiPencil />
     },
     {
         id: 7,
@@ -50,8 +49,8 @@ export const servicesData = [
     // }, 
     {
         id: 9,
-        title: 'Video Editing',
-        icon: <FaVideo />
+        title: 'Photo Editing',
+        icon: <FaPhotoVideo />
     },
     // {
     //     id: 10,
@@ -60,19 +59,19 @@ export const servicesData = [
     // },
     {
         id: 11,
-        title: 'Ebook Writing',
-        icon: <FaTabletAlt />
+        title: 'Cloud Hosting',
+        icon: <FaCloud />
     },
     // {
     //     id: 12,
     //     title: 'Audio Transcription',
     //     icon: <AiFillAudio />
     // },
-    {
-        id: 13,
-        title: 'Blog Posting',
-        icon: <FaRegNewspaper />
-    },
+    // {
+    //     id: 13,
+    //     title: 'Blog Posting',
+    //     icon: <FaRegNewspaper />
+    // },
 
 ]
 

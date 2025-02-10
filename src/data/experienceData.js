@@ -15,7 +15,7 @@ export const experienceData = [
     },
     {
         id: 3,
-        company: 'D Photographers',
+        company: 'Freelance',
         jobtitle: 'Photographer',
         startYear: '2021',
         endYear: '2023'

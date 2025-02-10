@@ -1,21 +1,13 @@
 import React, { useContext, useState } from 'react';
 import { Snackbar, IconButton, SnackbarContent } from '@material-ui/core';
 import CloseIcon from '@material-ui/icons/Close';
-import axios from 'axios';
 import isEmail from 'validator/lib/isEmail';
 import { makeStyles } from '@material-ui/core/styles';
 import {
-    FaTwitter,
     FaLinkedinIn,
     FaGithub,
-    FaYoutube,
-    FaBloggerB,
     FaRedditAlien,
-    FaStackOverflow,
-    FaCodepen,
     FaInstagram,
-    FaGitlab,
-    FaMediumM,
 } from 'react-icons/fa';
 import { AiOutlineSend, AiOutlineCheckCircle } from 'react-icons/ai';
 import { FiPhone, FiAtSign } from 'react-icons/fi';
@@ -134,28 +126,40 @@ function Contacts() {
 
         if (name && email && message) {
             if (isEmail(email)) {
-                const responseData = {
-                    name: name,
-                    email: email,
-                    message: message,
-                };
+                const formData = new FormData();
+                formData.append("apikey", "63907004-5085-4642-82de-f91dcb5663a2"); // Replace with your Web3Forms API key
+                formData.append("name", name);
+                formData.append("email", email);
+                formData.append("message", message);
 
-                axios.post(contactsData.sheetAPI, responseData).then((res) => {
-                    console.log('success');
-                    setSuccess(true);
-                    setErrMsg('');
-
-                    setName('');
-                    setEmail('');
-                    setMessage('');
-                    setOpen(false);
-                });
+                fetch("https://api.web3forms.com/submit", {
+                    method: "POST",
+                    body: formData,
+                })
+                    .then((res) => res.json())
+                    .then((data) => {
+                        if (data.success) {
+                            console.log("success");
+                            setSuccess(true);
+                            setErrMsg("");
+                            setName("");
+                            setEmail("");
+                            setMessage("");
+                        } else {
+                            setErrMsg("Submission failed. Please try again.");
+                            setOpen(true);
+                        }
+                    })
+                    .catch((error) => {
+                        setErrMsg("An error occurred. Please try again later.");
+                        setOpen(true);
+                    });
             } else {
-                setErrMsg('Invalid email');
+                setErrMsg("Invalid email");
                 setOpen(true);
             }
         } else {
-            setErrMsg('Enter all the fields');
+            setErrMsg("Enter all the fields");
             setOpen(true);
         }
     };
@@ -313,7 +317,7 @@ function Contacts() {
                         </div>
 
                         <div className='socialmedia-icons'>
-                            {socialsData.twitter && (
+                            {/* {socialsData.twitter && (
                                 <a
                                     href={socialsData.twitter}
                                     target='_blank'
@@ -322,7 +326,7 @@ function Contacts() {
                                 >
                                     <FaTwitter aria-label='Twitter' />
                                 </a>
-                            )}
+                            )} */}
                             {socialsData.github && (
                                 <a
                                     href={socialsData.github}
@@ -353,7 +357,7 @@ function Contacts() {
                                     <FaInstagram aria-label='Instagram' />
                                 </a>
                             )}
-                            {socialsData.medium && (
+                            {/* {socialsData.medium && (
                                 <a
                                     href={socialsData.medium}
                                     target='_blank'
@@ -382,7 +386,7 @@ function Contacts() {
                                 >
                                     <FaYoutube aria-label='YouTube' />
                                 </a>
-                            )}
+                            )} */}
                             {socialsData.reddit && (
                                 <a
                                     href={socialsData.reddit}
@@ -393,7 +397,7 @@ function Contacts() {
                                     <FaRedditAlien aria-label='Reddit' />
                                 </a>
                             )}
-                            {socialsData.stackOverflow && (
+                            {/* {socialsData.stackOverflow && (
                                 <a
                                     href={socialsData.stackOverflow}
                                     target='_blank'
@@ -422,7 +426,7 @@ function Contacts() {
                                 >
                                     <FaGitlab aria-label='GitLab' />
                                 </a>
-                            )}
+                            )} */}
                         </div>
                     </div>
                 </div>
