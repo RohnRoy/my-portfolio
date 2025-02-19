@@ -127,7 +127,7 @@ function Contacts() {
         if (name && email && message) {
             if (isEmail(email)) {
                 const formData = new FormData();
-                formData.append("apikey", "63907004-5085-4642-82de-f91dcb5663a2"); // Replace with your Web3Forms API key
+                formData.append("apikey", process.env.REACT_APP_WEB3FORMS_API_KEY);
                 formData.append("name", name);
                 formData.append("email", email);
                 formData.append("message", message);
@@ -139,7 +139,7 @@ function Contacts() {
                     .then((res) => res.json())
                     .then((data) => {
                         if (data.success) {
-                            console.log("success");
+                            // console.log("success");
                             setSuccess(true);
                             setErrMsg("");
                             setName("");

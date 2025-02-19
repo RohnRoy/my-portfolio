@@ -46,5 +46,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "overrides": {
+    "conflicting-package-1": "1.2.3",
+    "conflicting-package-2": "4.5.6"
+   
   }
 }
